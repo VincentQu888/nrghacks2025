@@ -3,10 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NRGHacks 2025</title>
+    <title>NRGHacks | York Region High School Hackathon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <style>
+        /* CSS block */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(32,32,32);
+            background-image: url('./homebg.jpg'); /* Add your background image URL here */
+            background-size: cover; /* Ensures the background covers the entire body */
+            background-position: center; /* Centers the background image */
+            color: rgb(200,200,200);
+            margin: 0;
+            padding: 0;
+        }
+        #cover {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            background-color: #000000d9
+        }
+        h1 {
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 56pt;
+            font-family: "Chakra Petch", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #main-content {
+            padding: 1em;
+            text-align: center;
+        }
+        #logo {
+            max-width: 256px;
+        }
+        #countdown {
+            font-family: "Fira Code", monospace;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            color: #0DF205;
+        }
+    </style>
 </head>
 <body>
-    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-    <a href="https://logwork.com/countdown-timer" class="countdown-timer" data-date="2025-02-18 8:00">Time Until NRGHacks 2025... (WEBSITE COMING SOON)</a>
+    <div id="cover">
+        <div id="main-content">
+            <img src="./NRG_vqedit.svg" id="logo"/><!-- NRGHacks Logo-->
+            <h1>NRGHacks</h1>
+            <div id="countdown" class=".fira"></div>
+            <p>A hackathon designed for high school students.</p>
+            <p>Join us for an event of learning and competing through code!</p>
+            <p>YRDSB students can sign up through their <em>School-Cash-Online</em> System.</p>
+            <br>
+            <p><strong>Date:</strong> Tuesday, February 18th, 2025</p>
+            <p><strong>Location:</strong> <a href="https://aurorapl.ca/" target="_blank" style="color: #0DF205;">Aurora Public Library</a></p>
+            <script>
+                // JavaScript block
+                document.addEventListener('DOMContentLoaded', function() {
+                    function updateCountdown() {
+                        const targetDate = new Date('February 18, 2025 00:00:00').getTime();
+                        const now = new Date().getTime();
+                        const distance = targetDate - now;
+        
+                        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+                        document.getElementById('countdown').innerHTML = 
+                            days + " DAYS " + hours + "H " + minutes + "M " + seconds + "S";
+
+                    }
+        
+                    const countdownInterval = setInterval(updateCountdown, 1000);
+                });
+            </script>
+        </div>
+    </div>
 </body>
 </html>
