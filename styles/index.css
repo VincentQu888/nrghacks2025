@@ -1,14 +1,21 @@
 /*general*/
 html{
     font-size: calc(0.83vw);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 body{
     margin: 0;
-    overflow-x: hidden;
+    padding: 0;
     font-family: "Roboto Mono", serif;
     color: #fff;
     background-color: #332200;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
 }
 
 #bg{
@@ -826,6 +833,8 @@ body{
 
 #faq{
     width: 120rem;
+    position: relative;
+    z-index: 1000;
 }
 
 #faq-card{
