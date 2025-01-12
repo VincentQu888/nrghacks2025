@@ -1,8 +1,3 @@
-TEMPORARY SITE FOR NRGHACKS 2025...
+NRGHacks 2025 official website!!
 
-
-SITE COMING SOON!
-
-
-
-https://vincentqu888.github.io/nrghacks2025/
+NRGHacks.ca
