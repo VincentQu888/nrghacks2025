@@ -9,6 +9,7 @@ body{
     font-family: "Roboto Mono", serif;
     color: #fff;
     background-color: #332200;
+    width: 100vw;
 }
 
 #bg{
@@ -826,6 +827,8 @@ body{
 
 #faq{
     width: 120rem;
+    position: relative;
+    z-index: 1000;
 }
 
 #faq-card{
