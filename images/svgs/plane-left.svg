@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="inner-shadow-filter-2" bx:preset="inner-shadow 1 -2 5 2 0.1 #000000ba" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="-2" dy="5"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#000000ba" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path style="filter: url(&quot;#inner-shadow-filter-2&quot;); stroke: rgba(0, 0, 0, 0); fill: rgb(255, 255, 255); transform-box: fill-box; transform-origin: 50% 50%;" d="M 96.385 168.186 L 297.921 169.061 C 297.921 169.061 326.746 166.868 330.033 157.637 C 333.32 148.406 341.194 155.18 341.853 146.585 C 342.512 137.99 286.911 133.958 286.911 133.958 C 286.911 133.958 194.389 131.539 130.201 131.234 C 105.008 131.114 23.851 149.613 23.405 164.218 C 22.959 178.823 11.116 209.58 11.116 209.58 L 38.171 209.394 C 38.171 209.394 58.687 169.603 96.385 168.186 Z" transform="matrix(-1, 0, 0, -1, 0.000001, 0.000007)"/>
+  <path style="filter: none; fill: rgb(255, 255, 255); stroke: rgba(0, 0, 0, 0); transform-origin: 164.079px 207.756px;" d="M 258.625 221.362 C 258.625 221.362 93.054 194.374 82.454 193.574 C 71.853 192.775 71.001 200.193 69.558 202.844 C 68.115 205.494 130.054 221.995 130.054 221.995 L 258.625 221.362 Z" transform="matrix(-1, 0, 0, -1, 0.000003, 0)"/>
+  <path style="stroke: rgba(0, 0, 0, 0); fill: rgb(153, 153, 153); transform-origin: 149.999px 169.09px;" d="M 143.165 165.923 C 143.165 165.923 136.109 170.389 142.383 171.245 C 148.658 172.101 150.991 172.947 157.433 171.397 C 163.874 169.847 157.106 166.013 157.106 166.013 L 143.165 165.923 Z" transform="matrix(-1, 0, 0, -1, 0, 0.000005)"/>
+  <path style="fill: rgb(92, 176, 182); stroke-width: 0.5px; stroke: rgba(0, 0, 0, 0); transform-origin: 30.554px 182.462px;" d="M 33.33 186.676 C 33.33 186.676 22.565 188.565 22.002 181.782 C 21.438 174.999 39.12 179.418 39.12 179.418 C 39.12 179.418 37.947 184.002 33.33 186.676 Z" transform="matrix(-1, 0, 0, -1, 0.000001, 0)"/>
+</svg>

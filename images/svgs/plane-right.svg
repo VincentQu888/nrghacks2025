@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <filter id="inner-shadow-filter-2" bx:preset="inner-shadow 1 -2 -5 2 0.1 #000000ba" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="-2" dy="-5"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feFlood flood-color="#000000ba" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path style="filter: url(&quot;#inner-shadow-filter-2&quot;); stroke: rgba(0, 0, 0, 0); fill: rgb(255, 255, 255);" d="M 96.385 172.627 L 297.921 171.752 C 297.921 171.752 326.746 173.945 330.033 183.176 C 333.32 192.407 341.194 185.633 341.853 194.228 C 342.512 202.823 286.911 206.855 286.911 206.855 C 286.911 206.855 194.389 209.274 130.201 209.579 C 105.008 209.699 23.851 191.2 23.405 176.595 C 22.959 161.99 11.116 131.233 11.116 131.233 L 38.171 131.419 C 38.171 131.419 58.687 171.21 96.385 172.627 Z"/>
+  <path style="filter: none; fill: rgb(255, 255, 255); stroke: rgba(0, 0, 0, 0);" d="M 283.443 194.149 C 283.443 194.149 117.872 221.137 107.272 221.937 C 96.671 222.736 95.819 215.318 94.376 212.667 C 92.933 210.017 154.872 193.516 154.872 193.516 L 283.443 194.149 Z"/>
+  <path style="stroke: rgba(0, 0, 0, 0); fill: rgb(153, 153, 153);" d="M 196.141 172.258 C 196.141 172.258 189.085 167.792 195.359 166.936 C 201.634 166.08 203.967 165.234 210.409 166.784 C 216.85 168.334 210.082 172.168 210.082 172.168 L 196.141 172.258 Z"/>
+  <path style="fill: rgb(92, 176, 182); stroke-width: 0.5px; stroke: rgba(0, 0, 0, 0);" d="M 325.198 178.247 C 325.198 178.247 314.433 176.358 313.87 183.141 C 313.306 189.924 330.988 185.505 330.988 185.505 C 330.988 185.505 329.815 180.921 325.198 178.247 Z"/>
+</svg>
