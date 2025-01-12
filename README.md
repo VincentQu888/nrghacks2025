@@ -1,3 +1,3 @@
 NRGHacks 2025 official website!!
 
-NRGHacks.ca
+https://www.NRGHacks.ca
