@@ -525,6 +525,42 @@ body{
     z-index: 1002;
 }
 
+@media (max-width: 1000px) {
+    #last-year{
+        display: none;
+    }
+
+    #trunk{
+        height: 280rem;
+    }
+
+    #bg{
+        height: 287rem;
+    }
+
+    #vine{
+        height: 277rem;
+    }
+
+    #bg-cloud-2,
+    #bg-cloud-3,
+    #bg-cloud-4,
+    #bg-cloud-5,
+    #bg-cloud-6,
+    #bg-cloud-7,
+    #bg-cloud-8,
+    #bg-cloud-9,
+    #bg-cloud-10,
+    #bg-cloud-11,
+    #bg-cloud-12,
+    #bg-cloud-13,
+    #bird-3,
+    #bird-4,
+    #bird-5{
+        display: none;
+    }
+}
+
 .cloud{
     opacity: 0.7;
 }
