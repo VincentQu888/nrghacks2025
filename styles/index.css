@@ -249,13 +249,13 @@ body{
 
 @keyframes banner-scroll-left{
     to{
-        transform: translateX(-360rem);
+        transform: translateX(-500rem);
     }
 }
 
 @keyframes banner-scroll-right{
     to{
-        transform: translateX(360rem);
+        transform: translateX(500rem);
     }
 }
 
