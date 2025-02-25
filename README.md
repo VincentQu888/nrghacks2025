@@ -1,3 +1,3 @@
 NRGHacks 2025 official website!!
 
-https://www.nrghacks.ca
+https://vincentqu888.github.io/nrghacks2025/
